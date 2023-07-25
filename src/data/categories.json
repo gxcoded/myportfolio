@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "description": "frontend"
+  },
+  {
+    "id": 2,
+    "description": "backend"
+  },
+  {
+    "id": 3,
+    "description": "database"
+  },
+  {
+    "id": 4,
+    "description": "version control"
+  }
+]
