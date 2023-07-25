@@ -1,0 +1,34 @@
+@media(max-width: 1140px){
+    .container{
+        width: 80%;
+    }
+   .main-profile{
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+   }
+   .main-profile .left {
+    align-items: center;
+  }
+}
+@media(max-width: 1000px){
+    .about-section {
+       flex-direction: column;
+      }
+    .about-section-right,
+    .about-section-left {
+        width: 100%;
+    }
+    .section-image {
+       margin: 2em 0;
+      }
+}
+@media(max-width: 500px){
+    .container{
+        width: 90%;
+    }
+    .footer-container {
+        height: 50vh;
+        margin-top: 10em;
+    }
+}

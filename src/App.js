@@ -1,4 +1,5 @@
 import "./App.css";
+import "./assets/css/responsive.css"
 import Main from "./components/Main";
 import { useEffect } from "react";
 

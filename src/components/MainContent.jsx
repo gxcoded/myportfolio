@@ -4,11 +4,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const MainContent = () => {
   return (
-    <div className=".main-content main-profile">
-      <div className="main-profile left">
+    <div className="main-content main-profile ">
+      <div className="main-profile left ">
         <img src={Me} alt="me" />
       </div>
-      <div className="main-profile right">
+      <div className="main-profile right ">
         <h1>Gilbert Gucela</h1>
         <h2>Software Developer</h2>
         <p>

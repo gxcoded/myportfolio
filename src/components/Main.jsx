@@ -3,7 +3,6 @@ import Nav from "./Nav";
 import TopNav from "./TopNav";
 import BackgroundText from "./BackgroundText";
 import Projects from "./Projects";
-import Skills from "./Skills";
 import About from "./About";
 import Footer from "./Footer";
 import { useState } from "react";
@@ -27,7 +26,6 @@ const Main = () => {
         <MainContent />
         <Nav />
         <Projects />
-        {/* <Skills /> */}
         <About />
         <Footer />
       </div>
