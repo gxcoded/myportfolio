@@ -20,21 +20,24 @@
     .about-section-left {
         width: 100%;
     }
+    .about-section-title {
+      margin-bottom: .5em;
+    }
     .section-image {
        margin: 2em 0;
-      }
+    }
+    .footer-container {
+        height: 50vh;
+    }
 }
 @media(max-width: 500px){
     .container{
         width: 90%;
     }
     .main-profile .right h1 {
-        font-size: 3.5em;
+        font-size: 2.5em;
       }
-    .footer-container {
-        height: 50vh;
-        margin-top: 10em;
-    }
+   
     .icon{
         display: none;
     }

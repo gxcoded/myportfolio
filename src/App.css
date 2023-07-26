@@ -341,9 +341,7 @@ nav ul {
 .about-section-title {
   font-size: 2em;
   font-weight: bold;
-  padding-left: 0.2em;
   margin-bottom: 2em;
-  /* border-left: 3px solid var(--blueish); */
 }
 .about-caption {
   font-size: 1.1em;
