@@ -195,8 +195,12 @@ section {
   margin-right: 0.3em;
 }
 a {
+  font-weight: 600;
   text-decoration: none;
   color: unset;
+}
+a:hover {
+  color: rgb(106, 122, 212);
 }
 /* navigation */
 nav {
