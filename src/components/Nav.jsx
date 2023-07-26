@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Resume from "../assets/images/Resume.pdf";
+import Resume from "../assets/images/Cv.pdf";
 
 import {
   faLinkedinIn,
