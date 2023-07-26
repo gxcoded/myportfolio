@@ -9,6 +9,7 @@
    }
    .main-profile .left {
     align-items: center;
+    margin-right: 0;
   }
 }
 @media(max-width: 1000px){
@@ -27,8 +28,20 @@
     .container{
         width: 90%;
     }
+    .main-profile .right h1 {
+        font-size: 3.5em;
+      }
     .footer-container {
         height: 50vh;
         margin-top: 10em;
+    }
+    .icon{
+        display: none;
+    }
+    .footer-title {
+        font-size: 4.5em;
+    }
+    .animate-footer-title {
+        font-size: 2.5em;
     }
 }

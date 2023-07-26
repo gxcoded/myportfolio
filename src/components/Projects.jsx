@@ -6,7 +6,7 @@ const Projects = () => {
     <div className="project-container">
       <div className="project-title title">Most Recent Projects</div>
       <div className="projects-contents">
-        <div className="content">
+        <div className="content proj-con">
           <div className="content-title">
             <FontAwesomeIcon className="circle-dot" icon={faCircle} />
             <span> Software Bill of Materials and Vulnerability</span>
@@ -21,7 +21,7 @@ const Projects = () => {
             the Go Programming language.
           </div>
         </div>
-        <div className="content">
+        <div className="content proj-con">
           <div className="content-title">
             <FontAwesomeIcon className="circle-dot" icon={faCircle} />
             Qr-Code Based Contact Tracing with Attendance Monitoring System
@@ -34,7 +34,7 @@ const Projects = () => {
             the M.E.R.N Stack.
           </div>
         </div>
-        <div className="content">
+        <div className="content proj-con">
           <div className="content-title">
             <FontAwesomeIcon className="circle-dot" icon={faCircle} />
             Supplies Management System with Predictive Analysis

@@ -16,6 +16,14 @@ const App = () => {
     setObserver(images, "animate-image");
     const texts = document.querySelectorAll(".bg-text");
     setObserver(texts, "animate-text");
+    const main = document.querySelectorAll(".main-image");
+    setObserver(main, "animate-main-image");
+    const captions = document.querySelectorAll(".main-caption");
+    setObserver(captions, "animate-main-caption");
+    const projects = document.querySelectorAll(".proj-con");
+    setObserver(projects, "animate-proj-con");
+    const footer = document.querySelectorAll(".footer-title");
+    setObserver(footer, "animate-footer-title");
   };
 
   const setObserver = (elements, key) => {
