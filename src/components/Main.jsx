@@ -5,24 +5,19 @@ import BackgroundText from "./BackgroundText";
 import Projects from "./Projects";
 import About from "./About";
 import Footer from "./Footer";
-import { useState } from "react";
 
-const Main = () => {
-  const [dark, setDarkMode] = useState(true);
 
-  const toggleTheme = () => {
-    setDarkMode(!dark);
-  };
-
+const Main = ({darkMode, toggleTheme}) => {
   return (
-    <section className={`main-section ${dark && "dark"}`}>
+    <section className={`main-section ${darkMode && "dark"}`}>
+      {darkMode}
       <BackgroundText
         classProp={"start"}
         text="Full Stack Software Developer"
       />
       <BackgroundText classProp={"end"} text={`Software Developer`} />
       <div className="container main-container">
-        <TopNav dark={dark} toggleTheme={toggleTheme} />
+        <TopNav darkMode={darkMode} toggleTheme={toggleTheme} />
         <MainContent />
         <Nav />
         <Projects />

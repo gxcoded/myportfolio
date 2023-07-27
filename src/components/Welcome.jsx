@@ -1,7 +1,7 @@
 import "../assets/css/welcome.css"
 import { useEffect,useState } from "react"
 
-const Welcome = () => {
+const Welcome = ({darkMode}) => {
   const [displayText,setDisplayText] = useState("")
   const texts = ["Hi!","Welcome", "to", "my","personal","website."]
 
@@ -14,7 +14,7 @@ const Welcome = () => {
     },interval)
   },[])
   return (
-    <div className="welcome-page">
+    <div className={`welcome-page ${darkMode && 'dark'}`}>
         <div className="welcome-bg-text border">Software</div>
         <div className="welcome-bg-text bottom">Developer</div>
         <div className="welcome-page-text">

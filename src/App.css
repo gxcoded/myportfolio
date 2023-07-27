@@ -6,6 +6,7 @@
   --silver: #807d7d;
   --blueish: rgb(141, 228, 240);
   --bg-text-opacity : 0.3;
+  --light-background: rgb(248, 246, 246);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -17,6 +18,7 @@
 }
 body {
   font-family: "Bai Jamjuree", sans-serif;
+  color: rgb(62, 58, 58) !important;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -130,7 +132,7 @@ section {
   transition: all 1s ease;
   position: relative;
   overflow: hidden;
-  background: rgb(248, 246, 246);
+  background: var(--light-background);
   padding-bottom: 1em;
 }
 .main-container {

@@ -6,7 +6,7 @@
         rgb(23, 30, 33),
         rgb(22, 22, 22)
     );
-    /* background: #181717; */
+    background: var(--light-background);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,6 +23,7 @@
     font-weight: bold;
     opacity: .1;
 }
+
 .bottom{
     display: flex;
     justify-content: flex-end;
@@ -30,9 +31,19 @@
 }
 .welcome-page-text{
     font-size: 8em;
-    font-weight: 500;
-    color: rgb(210, 210, 210);
+    font-weight: 600;
+    /* color: rgb(51, 48, 48); */
     padding: 1em;
+}
+.dark {
+    background: #211f1f;
+    background: radial-gradient(
+      rgb(45, 41, 41),
+      rgb(23, 30, 33),
+      rgb(22, 22, 22)
+    );
+    /* background: #181717; */
+    color: rgb(244, 233, 233);
 }
 @media(max-width: 800px){
     .welcome-bg-text{

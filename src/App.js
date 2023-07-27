@@ -5,10 +5,27 @@ import Welcome from "./components/Welcome";
 import { useEffect, useState } from "react";
 
 const App = () => {
+  const isDark = ()=>{
+    if(localStorage.getItem('lightMode') === null){
+      return true
+    }
+    return false
+  }
+
   const [loading,setLoading] = useState(true)
+  const [darkMode, setDarkMode] = useState(isDark());
+
+  const toggleTheme = () => {
+    if (darkMode){
+      localStorage.setItem('lightMode', true);
+    }else{
+      localStorage.removeItem('lightMode');
+    }
+    setDarkMode(!darkMode)
+  };
+
   useEffect(() => {
     disableEvents();
-  
     setTimeout(()=>{
       setLoading(false)
     },1500)
@@ -67,12 +84,15 @@ const App = () => {
       if (e.keyCode !== 122) e.preventDefault();
     });
   };
+
+ 
+
   return (
     <div>
       {
         loading ? 
-        <Welcome/> :
-        <Main /> 
+        <Welcome darkMode={darkMode}/> :
+        <Main darkMode={darkMode} toggleTheme={toggleTheme} /> 
       }
     </div>
   );
