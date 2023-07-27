@@ -1,12 +1,20 @@
 import "./App.css";
 import "./assets/css/responsive.css"
 import Main from "./components/Main";
-import { useEffect } from "react";
+import Welcome from "./components/Welcome";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [loading,setLoading] = useState(true)
   useEffect(() => {
     disableEvents();
-    animation();
+  
+    setTimeout(()=>{
+      setLoading(false)
+    },1500)
+    setTimeout(()=>{
+      animation();
+    },1550)
   }, []);
 
   const animation = () => {
@@ -61,7 +69,11 @@ const App = () => {
   };
   return (
     <div>
-      <Main />
+      {
+        loading ? 
+        <Welcome/> :
+        <Main /> 
+      }
     </div>
   );
 };

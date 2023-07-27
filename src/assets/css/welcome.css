@@ -1,0 +1,55 @@
+.welcome-page{
+    position: relative;
+    height: 100vh;
+    background: radial-gradient(
+        rgb(28, 27, 27),
+        rgb(23, 30, 33),
+        rgb(22, 22, 22)
+    );
+    /* background: #181717; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.welcome-bg-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 10em;
+    color: rgb(70, 68, 68);
+    font-weight: bold;
+    opacity: .1;
+}
+.bottom{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.welcome-page-text{
+    font-size: 8em;
+    font-weight: 500;
+    color: rgb(210, 210, 210);
+    padding: 1em;
+}
+@media(max-width: 800px){
+    .welcome-bg-text{
+        font-size: 8em;
+    }
+}
+@media(max-width: 620px){
+    .welcome-bg-text{
+        font-size: 7em;
+    }
+}
+@media(max-width: 540px){
+    .welcome-bg-text{
+      writing-mode: vertical-rl;
+      
+    }
+    .welcome-page-text{
+        font-size: 4em;
+    }
+}

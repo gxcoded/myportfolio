@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200;300;400;500;600;700&display=swap');
 :root {
   --secondary-text: rgb(77, 73, 73);
   --icon-color: rgb(43, 123, 244);
@@ -218,7 +218,7 @@ nav ul {
     rgb(23, 30, 33),
     rgb(22, 22, 22)
   );
-
+  /* background: #181717; */
   color: rgb(244, 233, 233);
   --secondary-text: rgb(220, 215, 215);
   --bg-text-opacity: 0.1;

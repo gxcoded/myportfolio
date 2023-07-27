@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import { useState } from "react";
 
 const Main = () => {
-  const [dark, setDarkMode] = useState(false);
+  const [dark, setDarkMode] = useState(true);
 
   const toggleTheme = () => {
     setDarkMode(!dark);
